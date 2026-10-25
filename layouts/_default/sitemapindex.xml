@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {{ range where site.AllPages "Kind" "in" (slice "home" "page" "section") }}
+  {{ $loc := .Permalink }}
+  {{ $keep := or (findRE "/posts/" $loc) (findRE "/archives/" $loc) (findRE "/about/" $loc) (findRE "/privacy/" $loc) }}
+  {{ if $keep }}
+  <url>
+    <loc>{{ $loc }}</loc>
+    {{ if .IsPage }}<lastmod>{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}</lastmod>{{ end }}
+    {{ if .IsTranslated }}
+    {{ range .Translations }}
+    <xhtml:link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}"/>
+    {{ end }}
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ (index .AllTranslations 0).Permalink }}"/>
+    {{ end }}
+  </url>
+  {{ end }}
+  {{ end }}
+</urlset>

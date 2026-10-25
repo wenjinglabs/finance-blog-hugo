@@ -1,0 +1,4 @@
+<div class="summary-box">
+  <p class="summary-title">{{ if eq .Page.Language.Lang "zh" }}本文要点{{ else }}Key points{{ end }}</p>
+  {{ .Inner | markdownify }}
+</div>

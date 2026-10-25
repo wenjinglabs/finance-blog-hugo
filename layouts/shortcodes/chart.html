@@ -1,0 +1,39 @@
+{{/* 服务端渲染 SVG 横向条形图。用法:
+{{< chart type="hbar" title="..." labels="A;B;C" values="1;2;3" unit="%" highlight="2" >}} */}}
+{{ $type := .Get "type" | default "hbar" }}
+{{ $title := .Get "title" }}
+{{ $labels := split (.Get "labels") ";" }}
+{{ $values := split (.Get "values") ";" }}
+{{ $unit := .Get "unit" | default "" }}
+{{ $hi := .Get "highlight" | default "-1" | int }}
+{{ $lang := .Page.Language.Lang }}
+{{ $W := 640 }}
+{{ $n := len $labels }}
+{{ $max := 0.0 }}
+{{ range $values }}{{ $f := float . }}{{ if gt (math.Abs $f) $max }}{{ $max = math.Abs $f }}{{ end }}{{ end }}
+{{ $rowH := 52 }}
+{{ $H := add (mul $rowH $n) 56 }}
+<figure class="chart">
+  <div class="chart-box">
+    <svg viewBox="0 0 640 {{$H}}" role="img" aria-label="{{$title}}">
+      <text x="16" y="22" class="c-title">{{$title}}</text>
+      {{ range $i, $label := $labels }}
+      {{ $v := float (index $values $i) }}
+      {{ $w := (math.Div (math.Abs $v) $max) | mul 440 }}
+      {{ $y := add 40 (mul $i $rowH) }}
+      {{ $isHi := eq $i $hi }}
+      <text x="16" y="{{ add $y 20 }}" class="c-label">{{$label}}</text>
+      <rect x="150" y="{{ add $y 8 }}" width="{{$w}}" height="30" rx="6" class="c-bar{{ if $isHi }} hi{{ end }}"></rect>
+      <text x="{{ add 158 $w }}" y="{{ add $y 29 }}" text-anchor="end" class="c-value{{ if $isHi }} hi{{ end }}">{{ $v }}{{$unit}}</text>
+      {{ end }}
+    </svg>
+  </div>
+  <details class="chart-data">
+    <summary>{{ if eq $lang "zh" }}查看数据{{ else }}View data{{ end }}</summary>
+    <table>
+      {{ range $i, $label := $labels }}
+      <tr><td>{{ $label }}</td><td>{{ index $values $i }}{{$unit}}</td></tr>
+      {{ end }}
+    </table>
+  </details>
+</figure>

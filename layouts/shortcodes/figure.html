@@ -1,0 +1,11 @@
+{{/* 文章插图：双语 alt/图注。src 形如 /images/xxx.avif */}}
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ if and (eq .Page.Language.Lang "zh") (.Get "altZh") }}{{ $alt = .Get "altZh" }}{{ end }}
+{{ $cap := .Get "caption" }}
+{{ if and (eq .Page.Language.Lang "zh") (.Get "captionZh") }}{{ $cap = .Get "captionZh" }}{{ end }}
+{{ $accent := .Get "accent" | default "#888" }}
+<figure class="post-figure" style="--accent: {{$accent}}">
+  <img src="{{$src}}" alt="{{$alt}}" loading="lazy" decoding="async">
+  {{ with $cap }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>

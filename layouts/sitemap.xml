@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{ $pages := union (where site.RegularPages "Type" "posts") (where site.RegularPages "Type" "posts") }}
+  {{ range site.Home.AllTranslations }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    {{ if .IsTranslated }}{{ range .Translations }}
+    <xhtml:link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" xmlns:xhtml="http://www.w3.org/1999/xhtml"/>
+    {{ end }}{{ end }}
+  </url>
+  {{ end }}
+  {{ range where site.AllPages "Kind" "page" }}
+  {{ if in .Permalink "/posts/" }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    <lastmod>{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}</lastmod>
+    {{ range .AllTranslations }}
+    <xhtml:link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" xmlns:xhtml="http://www.w3.org/1999/xhtml"/>
+    {{ end }}
+  </url>
+  {{ end }}
+  {{ end }}
+  {{ range where site.AllPages "Kind" "section" }}
+  {{ if or (eq .Permalink (absURL "archives/")) (eq .Permalink (absURL "about/")) (eq .Permalink (absURL "privacy/")) }}
+  <url><loc>{{ .Permalink }}</loc></url>
+  {{ end }}
+  {{ end }}
+</urlset>
