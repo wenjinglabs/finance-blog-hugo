@@ -6,8 +6,9 @@ date: "2026-10-24"
 tags: [投资, 基础知识]
 ---
 cover:
-  src: /images/totoro040.avif
+  image: /images/totoro040.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - 年化 8% 存 30 年，一半以上收益来自最后十年——中断是头号杀手。

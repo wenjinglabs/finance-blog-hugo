@@ -6,8 +6,9 @@ date: "2026-10-25"
 tags: [Investing, Fundamentals]
 ---
 cover:
-  src: /images/kimitachi010.avif
+  image: /images/kimitachi010.avif
   alt: cover
+  relative: false
 
 One statistic sums up 2026's job market better than any essay: **recent college graduates (ages 22-27) now face ~5.7% unemployment while the overall workforce sits near 4.4%** — the widest gap on record, per the [New York Fed's College Labor Market tracker](https://www.newyorkfed.org/research/college-labor-market). For almost the entire modern era, the arrow pointed the other way: a degree meant *lower* unemployment than average. That assumption just died, and most graduates haven't been told. This post is about why the flip happened, why it's structural rather than cyclical, and what the arithmetic says a new graduate should actually do about it.
 

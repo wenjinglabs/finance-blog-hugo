@@ -6,8 +6,9 @@ date: "2026-10-24"
 tags: [防骗, 基础知识]
 ---
 cover:
-  src: /images/chihiro025.avif
+  image: /images/chihiro025.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - 所有话术都能归为三种结构：不可能的收益+顺畅提现、制造专属感、把门槛包装成资格。

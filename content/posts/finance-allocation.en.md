@@ -6,8 +6,9 @@ date: "2026-10-24"
 tags: [Investing, Asset Allocation]
 ---
 cover:
-  src: /images/mononoke012.avif
+  image: /images/mononoke012.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - Most long-run return variability comes from allocation, not fund selection.

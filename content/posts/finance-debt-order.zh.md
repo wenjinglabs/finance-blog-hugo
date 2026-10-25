@@ -6,8 +6,9 @@ date: "2026-10-24"
 tags: [理财, 负债]
 ---
 cover:
-  src: /images/chihiro045.avif
+  image: /images/chihiro045.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - 同样每月 600 美元：雪崩法总利息 $4,489（33 个月），雪球法 $5,412（35 个月）——但雪球法第一笔清零早 4 个月。

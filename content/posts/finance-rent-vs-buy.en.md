@@ -6,8 +6,9 @@ date: "2026-10-25"
 tags: [Personal Finance, Housing]
 ---
 cover:
-  src: /images/kimitachi005.avif
+  image: /images/kimitachi005.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - In the base model (3% appreciation, 6% investment return), buying and renting are within a few thousand dollars for 20+ years.

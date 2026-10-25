@@ -6,8 +6,9 @@ date: "2026-10-24"
 tags: [投资, 指数基金]
 ---
 cover:
-  src: /images/majo030.avif
+  image: /images/majo030.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - 1% 的费率差，40 年吞掉约 23% 的最终财富。

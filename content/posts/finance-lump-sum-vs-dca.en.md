@@ -6,8 +6,9 @@ date: "2026-10-25"
 tags: [Investing, Index Funds]
 ---
 cover:
-  src: /images/laputa030.avif
+  image: /images/laputa030.avif
   alt: cover
+  relative: false
 
 A bonus, an inheritance, a home sale — one day you're holding a large sum and facing the most uncomfortable question in personal finance: **invest it all today, or spread it out?** Spreading feels safer. Investing everything at once feels reckless. I wanted actual numbers rather than feelings, so I ran a backtest on 155 years of real market data — every possible starting month from 1871 through September 2026, using Robert Shiller's [publicly available S&P 500 dataset](https://shillerdata.com/) with dividends reinvested.
 

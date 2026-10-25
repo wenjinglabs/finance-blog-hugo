@@ -6,8 +6,9 @@ date: "2026-10-25"
 tags: [Personal Finance, Cash Flow]
 ---
 cover:
-  src: /images/kazetachinu015.avif
+  image: /images/kazetachinu015.avif
   alt: cover
+  relative: false
 
 There are only two budgeting methods with real staying power. **50/30/20** — split after-tax income into 50% needs, 30% wants, 20% savings — was popularized by Elizabeth Warren and Amelia Warren Tyagi in their 2005 book *All Your Worth* (see the [personal budget overview](https://en.wikipedia.org/wiki/Personal_budget) for the rule in context). **Zero-based budgeting (ZBB)** — assign every single dollar a job before the month starts — is the engine behind YNAB and every hard-core spreadsheet. People argue about which is "right." The honest answer: they solve different problems, break in different places, and one of them matters about five times more than the other.
 

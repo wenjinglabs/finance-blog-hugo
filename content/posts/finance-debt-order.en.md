@@ -6,8 +6,9 @@ date: "2026-10-24"
 tags: [Personal Finance, Debt]
 ---
 cover:
-  src: /images/chihiro045.avif
+  image: /images/chihiro045.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - Same $600/month: avalanche costs $4,489 in interest over 33 months; snowball $5,412 over 35 — but snowball's first payoff lands 4 months sooner.

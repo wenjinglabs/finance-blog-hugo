@@ -6,8 +6,9 @@ date: "2026-10-24"
 tags: [Investing, Fundamentals]
 ---
 cover:
-  src: /images/totoro040.avif
+  image: /images/totoro040.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - Over 30 years at 8%, more than half the gains arrive in the final decade — interruption is the killer.

@@ -6,8 +6,9 @@ date: "2026-10-24"
 tags: [Personal Finance, Emergency Fund]
 ---
 cover:
-  src: /images/totoro032.avif
+  image: /images/totoro032.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - Size it from expenses: 3 months if income is stable, 6+ if volatile.

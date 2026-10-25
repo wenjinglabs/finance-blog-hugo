@@ -6,8 +6,9 @@ date: "2026-10-25"
 tags: [投资, 指数基金]
 ---
 cover:
-  src: /images/laputa030.avif
+  image: /images/laputa030.avif
   alt: cover
+  relative: false
 
 一笔年终奖、一笔遗产、一笔卖房款——某天你手里突然多了一大笔钱，然后面对个人理财里最让人难受的问题：**今天全部投进去，还是分批？**分批让人感觉安全，一次全投让人感觉鲁莽。我想要数字而不是感觉，所以用 155 年的真实市场数据跑了一个回测——从 1871 年到 2026 年 9 月的每一个可能的起始月，数据来自 Robert Shiller 公开的[标普 500 历史数据集](https://shillerdata.com/)，含股息再投资。
 

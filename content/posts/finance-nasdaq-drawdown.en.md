@@ -6,8 +6,9 @@ date: "2026-10-24"
 tags: [Investing, Market Downturns]
 ---
 cover:
-  src: /images/mononoke045.avif
+  image: /images/mononoke045.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - -20% to -35% drawdowns hit a tech-heavy index about once every five years; recovery took 4 months to 15 years.

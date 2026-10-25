@@ -6,8 +6,9 @@ date: "2026-10-24"
 tags: [Scams, Fundamentals]
 ---
 cover:
-  src: /images/chihiro025.avif
+  image: /images/chihiro025.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - Every pitch reduces to three structures: impossible returns with easy exits, manufactured exclusivity, thresholds dressed as privilege.

@@ -6,8 +6,9 @@ date: "2026-10-24"
 tags: [基础知识, 理财]
 ---
 cover:
-  src: /images/ponyo010.avif
+  image: /images/ponyo010.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - 按顺序来：生存开支 → 拿满雇主匹配 → 清高息债 → 备用金 → 长期投资。

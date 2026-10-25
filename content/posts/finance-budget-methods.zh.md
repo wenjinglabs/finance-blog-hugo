@@ -6,8 +6,9 @@ date: "2026-10-25"
 tags: [理财, 现金流]
 ---
 cover:
-  src: /images/kazetachinu015.avif
+  image: /images/kazetachinu015.avif
   alt: cover
+  relative: false
 
 真正活得久的记账方法只有两种。**50/30/20**——税后收入按 50% 必需、30% 想要、20% 储蓄分配——由 Elizabeth Warren 和女儿 Amelia Warren Tyagi 在 2005 年的《All Your Worth》一书中推广（规则语境见[个人预算条目](https://en.wikipedia.org/wiki/Personal_budget)）。**零基预算（ZBB）**——月初给每一块钱都安排任务——是 YNAB 和所有硬核表格背后的引擎。人们争论哪种“对”。诚实的答案是：它们解决的是不同的问题、在不同的地方失灵，而且其中一件比另一件重要五倍。
 

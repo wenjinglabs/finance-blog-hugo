@@ -6,8 +6,9 @@ date: "2026-10-25"
 tags: [投资, 基础知识]
 ---
 cover:
-  src: /images/kimitachi010.avif
+  image: /images/kimitachi010.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - 应届毕业生（22-27 岁）失业率约 5.7%，首次高于整体劳动力（约 4.4%），为有记录以来最大差距（NY Fed 数据）。

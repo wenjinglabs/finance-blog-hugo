@@ -6,8 +6,9 @@ date: "2026-10-25"
 tags: [理财, 住房]
 ---
 cover:
-  src: /images/kimitachi005.avif
+  image: /images/kimitachi005.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - 基线模型（房价年涨 3%、投资回报 6%）下，买房与租房二十年内差距只有几千美元。

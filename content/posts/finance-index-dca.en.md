@@ -6,8 +6,9 @@ date: "2026-10-24"
 tags: [Investing, Index Funds]
 ---
 cover:
-  src: /images/majo030.avif
+  image: /images/majo030.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - A 1% fee gap consumes about 23% of final wealth over 40 years.

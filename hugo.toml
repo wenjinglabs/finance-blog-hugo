@@ -2,6 +2,7 @@ baseURL = "https://blog.ggaag.com/"
 title = "GGAAG Finance Notes"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
+theme = "PaperMod"
 
 [pagination]
 pagerSize = 20
@@ -18,19 +19,43 @@ languageCode = "en-US"
 weight = 1
 title = "GGAAG Finance Notes"
 [languages.en.params]
-tagline = "Practical personal finance, written with the math shown: cash flow, emergency funds, index funds, allocation, and scam awareness."
+tagline = "Practical personal finance, written with the math shown."
+subtitle = "Practical personal finance, written with the math shown."
+keywords = ["personal finance", "index funds", "asset allocation", "emergency fund", "investing"]
 [languages.zh]
 languageCode = "zh-CN"
 weight = 2
 title = "GGAAG 财经笔记"
 [languages.zh.params]
 tagline = "普通人的理财与投资笔记：记账、应急备用金、指数基金定投、资产配置与防骗。"
+subtitle = "普通人的理财与投资笔记。"
+keywords = ["理财", "投资", "指数基金", "应急备用金", "资产配置", "防骗"]
 
 [params]
+env = "production"
 description = "Practical notes on personal finance: cash flow tracking, emergency funds, index fund investing, asset allocation, and spotting scams. Written with the math shown."
-descriptionZh = "普通人的理财与投资笔记：记账、应急备用金、指数基金定投、资产配置与防骗，全部给出计算过程。"
 author = "GGAAG"
-gaId = "G-05HJJXMSY6"
+defaultTheme = "auto"
+ShowReadingTime = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = false
+ShowCodeCopyButtons = false
+ShowToc = false
+displayFullLangName = true
+googleSiteVerify = "1-X-DrfXE3bRsRBqD-_JCCkkjHSkgw_lDImvjK216H0"
+
+[params.homeInfoParams]
+enabled = true
+Title = "Finance Notes"
+Content = "Practical personal finance, written with the math shown: cash flow, emergency funds, index funds, allocation, and scam awareness."
+
+[languages.zh.params.homeInfoParams]
+enabled = true
+Title = "财经笔记"
+Content = "普通人的理财与投资笔记：记账、应急备用金、指数基金定投、资产配置与防骗。"
+
+[services.googleAnalytics]
+ID = "G-05HJJXMSY6"
 
 [outputs]
 home = ["HTML", "RSS"]
@@ -42,26 +67,18 @@ posts = "/posts/:slug/"
 tag = "tags"
 
 [[menu.main]]
-name = "Home"
-pageRef = "/"
-weight = 1
-[[menu.main]]
 name = "Archives"
-pageRef = "/archives"
+pageRef = "archives"
 weight = 2
 [[menu.main]]
 name = "About"
-pageRef = "/about"
+pageRef = "about"
 weight = 3
 [[languages.zh.menu.main]]
-name = "首页"
-pageRef = "/"
-weight = 1
-[[languages.zh.menu.main]]
 name = "归档"
-pageRef = "/archives"
+pageRef = "archives"
 weight = 2
 [[languages.zh.menu.main]]
 name = "关于"
-pageRef = "/about"
+pageRef = "about"
 weight = 3

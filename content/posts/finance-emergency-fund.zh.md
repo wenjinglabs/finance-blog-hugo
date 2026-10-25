@@ -6,8 +6,9 @@ date: "2026-10-24"
 tags: [理财, 应急备用金]
 ---
 cover:
-  src: /images/totoro032.avif
+  image: /images/totoro032.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - 按支出算额度：收入稳定 3 个月，波动 6 个月以上。

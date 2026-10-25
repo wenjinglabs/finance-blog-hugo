@@ -6,8 +6,9 @@ date: "2026-10-24"
 tags: [Fundamentals, Personal Finance]
 ---
 cover:
-  src: /images/ponyo010.avif
+  image: /images/ponyo010.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - Work in order: basics → employer match → high-interest debt → emergency fund → long-term investing.

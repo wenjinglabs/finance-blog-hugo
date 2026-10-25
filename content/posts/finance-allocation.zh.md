@@ -6,8 +6,9 @@ date: "2026-10-24"
 tags: [投资, 资产配置]
 ---
 cover:
-  src: /images/mononoke012.avif
+  image: /images/mononoke012.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - 长期收益的大头由配置比例决定，而不是选了哪只基金。

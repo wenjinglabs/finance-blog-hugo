@@ -6,8 +6,9 @@ date: "2026-10-24"
 tags: [Personal Finance, Cash Flow]
 ---
 cover:
-  src: /images/howl021.avif
+  image: /images/howl021.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - Track three categories only: fixed, flexible, irregular.

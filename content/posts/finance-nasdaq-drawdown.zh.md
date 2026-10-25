@@ -6,8 +6,9 @@ date: "2026-10-24"
 tags: [投资, 市场下跌]
 ---
 cover:
-  src: /images/mononoke045.avif
+  image: /images/mononoke045.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - 科技权重高的指数大约每五年遇一次 -20%~-35% 回撤；恢复用时从 4 个月到 15 年。

@@ -6,8 +6,9 @@ date: "2026-10-24"
 tags: [理财, 现金流]
 ---
 cover:
-  src: /images/howl021.avif
+  image: /images/howl021.avif
   alt: cover
+  relative: false
 
 {{< summary >}}
 - 只记三类：固定、弹性、大额。
